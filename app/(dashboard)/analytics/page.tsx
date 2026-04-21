@@ -46,7 +46,7 @@ export default function AnalyticsPage() {
       <div>
         <h1 className="text-2xl font-bold tracking-tight text-foreground">Analytics</h1>
         <p className="text-muted-foreground">
-          Deep insights into baggage handling performance and business impact.
+          American Airlines PHL hub performance and business impact insights.
         </p>
       </div>
 

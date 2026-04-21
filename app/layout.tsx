@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: 'BagGuard AI | Predictive Baggage Intelligence',
-  description: 'Enterprise baggage risk prediction platform for airlines and airports. Prevent mishandled baggage before it happens.',
+  title: 'BagGuard AI | American Airlines PHL Operations',
+  description: 'Predictive baggage intelligence platform for American Airlines operations at Philadelphia International Airport (PHL).',
   generator: 'v0.app',
   icons: {
     icon: [
