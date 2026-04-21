@@ -21,21 +21,11 @@ export function DashboardHeader() {
       </div>
 
       <div className="flex items-center gap-3">
-        {/* Airport Selector */}
-        <Select defaultValue="jfk">
-          <SelectTrigger className="w-[180px] bg-secondary border-border">
-            <MapPin className="mr-2 size-4 text-muted-foreground" />
-            <SelectValue placeholder="Select airport" />
-          </SelectTrigger>
-          <SelectContent>
-            <SelectItem value="jfk">JFK - New York</SelectItem>
-            <SelectItem value="lax">LAX - Los Angeles</SelectItem>
-            <SelectItem value="ord">ORD - Chicago</SelectItem>
-            <SelectItem value="atl">ATL - Atlanta</SelectItem>
-            <SelectItem value="dfw">DFW - Dallas</SelectItem>
-            <SelectItem value="sfo">SFO - San Francisco</SelectItem>
-          </SelectContent>
-        </Select>
+        {/* Airport Selector - Fixed to PHL for American Airlines */}
+        <div className="flex items-center gap-2 rounded-md bg-secondary px-3 py-2 border border-border">
+          <MapPin className="size-4 text-primary" />
+          <span className="text-sm font-medium text-foreground">PHL - Philadelphia</span>
+        </div>
 
         {/* Date/Time Range */}
         <Select defaultValue="today">

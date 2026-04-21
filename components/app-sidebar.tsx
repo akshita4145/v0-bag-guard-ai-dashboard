@@ -49,8 +49,8 @@ export function AppSidebar() {
             <Package className="size-5 text-primary-foreground" />
           </div>
           <div className="flex flex-col">
-            <span className="text-base font-semibold text-sidebar-foreground">BagGuard</span>
-            <span className="text-xs text-primary">AI Platform</span>
+            <span className="text-base font-semibold text-sidebar-foreground">BagGuard AI</span>
+            <span className="text-xs text-primary">American Airlines | PHL</span>
           </div>
         </Link>
       </SidebarHeader>

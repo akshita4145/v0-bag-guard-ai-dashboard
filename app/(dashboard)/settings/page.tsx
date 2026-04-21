@@ -50,45 +50,39 @@ export default function SettingsPage() {
       </div>
 
       <div className="grid gap-6 lg:grid-cols-2">
-        {/* Airport Selection */}
+        {/* Airport & Airline Configuration */}
         <Card className="bg-card border-border">
           <CardHeader>
             <div className="flex items-center gap-2">
               <Building2 className="size-5 text-muted-foreground" />
-              <CardTitle className="text-base">Airport Selection</CardTitle>
+              <CardTitle className="text-base">Airport Configuration</CardTitle>
             </div>
-            <CardDescription>Choose your primary airport for monitoring</CardDescription>
+            <CardDescription>American Airlines PHL Hub Operations</CardDescription>
           </CardHeader>
           <CardContent className="space-y-4">
             <div className="space-y-2">
               <Label>Primary Airport</Label>
-              <Select defaultValue="jfk">
-                <SelectTrigger className="bg-secondary border-border">
-                  <SelectValue placeholder="Select airport" />
-                </SelectTrigger>
-                <SelectContent>
-                  <SelectItem value="jfk">JFK - John F. Kennedy International</SelectItem>
-                  <SelectItem value="lax">LAX - Los Angeles International</SelectItem>
-                  <SelectItem value="ord">ORD - Chicago O&apos;Hare</SelectItem>
-                  <SelectItem value="atl">ATL - Hartsfield-Jackson Atlanta</SelectItem>
-                  <SelectItem value="dfw">DFW - Dallas/Fort Worth</SelectItem>
-                  <SelectItem value="sfo">SFO - San Francisco International</SelectItem>
-                </SelectContent>
-              </Select>
+              <div className="flex items-center gap-2 rounded-md bg-secondary px-3 py-2.5 border border-border">
+                <span className="text-sm font-medium text-foreground">PHL - Philadelphia International Airport</span>
+              </div>
+              <p className="text-xs text-muted-foreground">Fixed for American Airlines hub operations</p>
+            </div>
+            <div className="space-y-2">
+              <Label>Monitored Terminals</Label>
+              <div className="flex flex-wrap gap-2">
+                <Badge variant="outline" className="bg-primary/10 text-primary border-primary/30">A-East</Badge>
+                <Badge variant="outline" className="bg-primary/10 text-primary border-primary/30">A-West</Badge>
+                <Badge variant="outline" className="bg-primary/10 text-primary border-primary/30">B/C</Badge>
+                <Badge variant="outline" className="bg-secondary text-muted-foreground border-border">D/E</Badge>
+                <Badge variant="outline" className="bg-primary/10 text-primary border-primary/30">F</Badge>
+              </div>
+              <p className="text-xs text-muted-foreground">AA operates primarily from A, B/C, and F terminals</p>
             </div>
             <div className="space-y-2">
               <Label>Time Zone</Label>
-              <Select defaultValue="est">
-                <SelectTrigger className="bg-secondary border-border">
-                  <SelectValue placeholder="Select timezone" />
-                </SelectTrigger>
-                <SelectContent>
-                  <SelectItem value="est">Eastern Time (ET)</SelectItem>
-                  <SelectItem value="cst">Central Time (CT)</SelectItem>
-                  <SelectItem value="mst">Mountain Time (MT)</SelectItem>
-                  <SelectItem value="pst">Pacific Time (PT)</SelectItem>
-                </SelectContent>
-              </Select>
+              <div className="flex items-center gap-2 rounded-md bg-secondary px-3 py-2.5 border border-border">
+                <span className="text-sm font-medium text-foreground">Eastern Time (ET) - UTC-5</span>
+              </div>
             </div>
           </CardContent>
         </Card>
@@ -236,7 +230,7 @@ export default function SettingsPage() {
               <Link2 className="size-5 text-muted-foreground" />
               <CardTitle className="text-base">Integration Settings</CardTitle>
             </div>
-            <CardDescription>Connect external data sources and systems</CardDescription>
+            <CardDescription>American Airlines systems and external data sources</CardDescription>
           </CardHeader>
           <CardContent>
             <div className="grid gap-4 sm:grid-cols-2">
@@ -246,8 +240,8 @@ export default function SettingsPage() {
                     <Plane className="size-5 text-success" />
                   </div>
                   <div>
-                    <p className="font-medium text-foreground">Flight Data API</p>
-                    <p className="text-xs text-muted-foreground">Real-time flight information</p>
+                    <p className="font-medium text-foreground">AA Flight Data API</p>
+                    <p className="text-xs text-muted-foreground">American Airlines real-time operations</p>
                   </div>
                 </div>
                 <div className="flex items-center gap-2">
@@ -282,8 +276,8 @@ export default function SettingsPage() {
                     <Scan className="size-5 text-success" />
                   </div>
                   <div>
-                    <p className="font-medium text-foreground">Baggage Scan Systems</p>
-                    <p className="text-xs text-muted-foreground">BHS scan data integration</p>
+                    <p className="font-medium text-foreground">PHL Baggage Handling</p>
+                    <p className="text-xs text-muted-foreground">PHL BHS scan data integration</p>
                   </div>
                 </div>
                 <div className="flex items-center gap-2">
